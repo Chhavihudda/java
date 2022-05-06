@@ -1,0 +1,32 @@
+package chhavi;
+import java.util.Scanner;
+public class Switchstr {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("enter three initials of week");
+Scanner sc=new Scanner (System.in);
+String day=sc.next();
+switch(day)
+{
+case "mon":
+	System.out.println("Monday");
+break;
+case "tue": System.out.println("Tuesday");
+break;
+case "wed": System.out.println("wednesday");
+break;
+case "thu": System.out.println("Thursday");
+break;
+case "fri": System.out.println("Friday");
+break;
+case "sat": System.out.println("Satday");
+break;
+case "sun": System.out.println("sunday");
+break;
+default : System.out.println("other day");
+
+
+
+}
+		
