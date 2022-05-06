@@ -1,0 +1,59 @@
+package chhavi;
+class shapes{
+	void draw()
+	{
+		System.out.println("Shape draw()");
+		
+	}
+	void erase()
+	{
+		System.out.println("shape erase()");
+	}
+}
+class circle extends shapes{
+	void draw()
+	{
+		System.out.println("circle draw()");
+	}
+	void erase()
+	{
+		System.out.println("circle erase()");
+	}
+}
+class triangle extends shapes
+{
+	void draw() {
+		System.out.println("triangle erase()");
+	}
+}
+class square extends shapes{
+	void draw() {
+		System.out.println("square draw()");
+	}
+	void erase() {
+		System.out.println("square erase()");
+	}
+}
+public class shape {
+	public static shapes randshape()
+	{
+		switch((int)(Math.random()*3))
+		{
+		case 0 : return new circle();
+		case 1 : return new square();
+		case 2 : return new triangle();
+		default: System.out.println("default");
+		return new shapes();
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int i;
+shapes s[]=new shapes[2];
+//for( i=0;i<s.length;i++);
+//s[i]=randshape();
+for (i=0;i<s.length;i++)
+	s[i].draw();
+	}
+
+}
